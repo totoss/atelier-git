@@ -26,7 +26,7 @@ Les commandes se tapent dans un terminal. Sous Windows, utilisez **Git Bash**, i
 4. Déclarez le dépôt d'origine sous le nom `upstream`, pour pouvoir récupérer d'éventuelles mises à jour des exercices :
 
    ```bash
-   git remote add upstream https://github.com/<compte-enseignant>/atelier-git.git
+   git remote add upstream https://github.com/totoss/atelier-git.git
    ```
 
 5. Vérifiez :
