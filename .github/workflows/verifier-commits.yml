@@ -1,0 +1,20 @@
+name: Vérifier les commits
+
+on: pull_request
+
+permissions:
+  contents: read
+
+jobs:
+  commits:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Vérifier les messages de commit
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+          HEAD: ${{ github.event.pull_request.head.sha }}
+          LC_ALL: C.UTF-8
+        run: bash scripts/verifier-commits.sh "$BASE" "$HEAD"
