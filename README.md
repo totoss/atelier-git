@@ -12,6 +12,8 @@ Le projet est volontairement minuscule : une page web statique, sans rien à ins
 
 ## Mise en place
 
+Les commandes se tapent dans un terminal. Sous Windows, utilisez **Git Bash**, installé avec Git, et non PowerShell.
+
 1. Sur GitHub, cliquez sur **Fork** en haut de cette page. Laissez cochée l'option « Copy the `main` branch only ».
 2. Dans votre fork, ouvrez l'onglet **Actions** et activez les workflows. Ils sont désactivés par défaut sur un fork.
 3. Clonez votre fork, pas le dépôt d'origine :
